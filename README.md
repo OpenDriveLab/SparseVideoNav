@@ -26,7 +26,7 @@
 <div>
 <a href="https://opendrivelab.com/SparseVideoNav" target="_blank"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
 <a href="https://github.com/OpenDriveLab/SparseVideoNav"><img alt="Repo" src="https://img.shields.io/badge/github-repo-blue?logo=github"/></a>
-<a href="" target="_blank"><img src="https://img.shields.io/badge/arXiv-2602-b31b1b" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2602.05827" target="_blank"><img src="https://img.shields.io/badge/arXiv-2602.05827-b31b1b" alt="arXiv"></a>
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank"><img src="https://img.shields.io/badge/License-CC_%20_BY--NC--SA_4.0-blue.svg" alt="License"/></a>
 </div>
 
@@ -45,6 +45,7 @@ SparseVideoNav introduces video generation models to real-world beyond-the-view 
 > 🌟 Stay up to date at [opendrivelab.com](https://opendrivelab.com/#news)!
 
 - 🎉 **2026-02-05**: [Project Page](https://opendrivelab.com/SparseVideoNav) is now available!
+- 🎉 **2026-02-06**: [arXiv preprint](https://arxiv.org/abs/2602.05827) is now available!
 
 ## 📬 Contact
 
@@ -67,7 +68,8 @@ For further inquiries or assistance, please contact [zhanghenryhai12138@gmail.co
 - We achieve the first realization of beyond-the-view navigation in challenging night scenes with a 17.5% success rate.
 
 ## 📝 TODO List
-- [ ] SparseVideoNav Paper Release.
+- [x] SparseVideoNav Paper Release.
+  - [x] arXiv preprint is now available! 
 - [ ] SparseVideoNav Code Release.
   - [ ] Inference code of distilled video generation model and model checkpoint (Estimate 2026 March).
   - [ ] Inference code of continuous action head and model checkpoint (Estimate 2026 Q3).
@@ -84,7 +86,7 @@ All the data and code within this repo are under [CC BY-NC-SA 4.0](https://creat
 @article{zhang2026sparse,
   title={Sparse Video Generation Propels Real-World Beyond-the-View Vision-Language Navigation},
   author={Zhang, Hai and Liang, Siqi and Chen, Li and Li, Yuxian and Xu, Yukuan and Zhong, Yichao and Zhang, Fu and Li, Hongyang},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2602.05827},
   year={2026}
 }
 ```
