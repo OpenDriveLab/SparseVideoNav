@@ -1,0 +1,57 @@
+[project]
+name = "sparsevideonav"
+version = "0.1.0"
+description = "Sparse Video Navigation: language-conditioned future video and action prediction"
+readme = "README.md"
+requires-python = "~=3.10.0"
+dependencies = [
+    "accelerate>=1.10.1",
+    "decord>=0.6.0",
+    "diffusers>=0.35.1",
+    "gradio>=5.45.0",
+    "huggingface-hub>=0.34.4",
+    "hydra-core>=1.3.2",
+    "ipykernel>=6.30.1",
+    "mediapy>=1.2.4",
+    "pip>=25.2",
+    "pytorch-lightning>=2.5.5",
+    "rich>=14.1.0",
+    "ruff>=0.12.12",
+    "tensorboard>=2.8.0",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.56.1",
+    "wandb[media]>=0.21.4",
+    "numpy<2.0",
+    "modelscope>=1.29.2",
+    "nvidia-ml-py>=13.580.65",
+    "imageio>=2.37.0",
+    "requests>=2.32.5",
+    "moviepy==1.0.3",
+    "lightning>=2.5.5",
+    "pynvml>=13.0.1",
+    "ftfy>=6.3.1",
+    "safetensors>=0.6.2",
+    "einops>=0.8.1",
+    "av>=15.1.0",
+    "einops-exts>=0.0.4",
+    "matplotlib>=3.10.6",
+    "hatchling>=1.28.0",
+    "opencv-python-headless>=4.11.0.86",
+    "setuptools>=80.9.0",
+    "flash-attn>=2.8.3",
+]
+
+[tool.uv.sources]
+
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
+
+[dependency-groups]
+
+
+post = [
+    "flash-attn"
+]

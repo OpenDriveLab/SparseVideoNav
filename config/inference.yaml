@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------------------
+# SparseVideoNav Inference Configuration
+# ---------------------------------------------------------------------------
+
+defaults:
+  - _self_
+
+# --- I/O (override from command line) --------------------------------------
+video_path: null                     # Path to input video (required)
+prompt: null                         # Navigation instruction (required)
+output_path: "outputs"               # Output directory
+
+# --- Checkpoint paths ------------------------------------------------------
+# Main checkpoint directory (all sub-ckpts derived from this):
+#   ckpt_path/
+#   ├── google/umt5-xxl/                    # t5 tokenizer
+#   ├── models_t5_umt5-xxl-enc-bf16.pth     # t5 encoder
+#   ├── Wan2.1_VAE.pth                       # vae
+#   └── svn_ckpt/                            # svn model
+ckpt_path: "models/SparseVideoNav-Models"
+
+# Optional individual overrides (take precedence over ckpt_path):
+t5_ckpt_path: null        # base dir containing google/umt5-xxl + encoder .pth
+vae_ckpt_path: null       # direct path to VAE .pth
+svn_ckpt_path: null       # path to svn_ckpt dir or .pth file
+
+# --- Inference parameters --------------------------------------------------
+inference:
+  device: "cuda:0"
+  target_fps: 4                      # Resample input video to this FPS
+  target_size: 256                   # Center-crop and resize frames to this size
+  future_chunk_offsets:              # Sparse offsets for future chunk prediction
+    - 0
+    - 1
+    - 4
+    - 7
+    - 10
+    - 13
+    - 16
+    - 19
+  denoise_steps: 4                   # Video denoising steps (higher = better quality)
+
+# ---------------------------------------------------------------------------
+# Model Architecture
+# ---------------------------------------------------------------------------
+model:
+  backbone_config:
+
+    # VAE encoder/decoder
+    vae:
+      z_dim: 16
+
+    # T5 text encoder
+    t5:
+      text_len: 512
