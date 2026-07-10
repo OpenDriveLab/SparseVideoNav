@@ -27,6 +27,7 @@
 <a href="https://opendrivelab.com/SparseVideoNav" target="_blank"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
 <a href="https://github.com/OpenDriveLab/SparseVideoNav"><img alt="Repo" src="https://img.shields.io/badge/github-repo-blue?logo=github"/></a>
 <a href="https://arxiv.org/abs/2602.05827" target="_blank"><img src="https://img.shields.io/badge/arXiv-2602.05827-b31b1b" alt="arXiv"></a>
+<a href="https://huggingface.co/datasets/OpenDriveLab/SparseVideoNav" target="_blank"><img src="https://img.shields.io/badge/Hugging_Face-FF9D00?logo=huggingface&logoColor=white" alt="arXiv"></a>
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank"><img src="https://img.shields.io/badge/License-CC_%20_BY--NC--SA_4.0-blue.svg" alt="License"/></a>
 </div>
 
@@ -47,6 +48,7 @@ SparseVideoNav introduces video generation models to real-world beyond-the-view 
 - 🎉 **2026-02-05**: [Project Page](https://opendrivelab.com/SparseVideoNav) is now available!
 - 🎉 **2026-02-06**: [arXiv preprint](https://arxiv.org/abs/2602.05827) is now available!
 - 🎉 **2026-03-31**: Inference code and model checkpoint released!
+- 🎉 **2026-07-10**: [SparseVideoNav Dataset](https://huggingface.co/datasets/OpenDriveLab/SparseVideoNav) is now available!
 
 ## 📌 Table of Contents
 - 📖 [Introduction](#-introduction)
@@ -196,8 +198,8 @@ model = SVNModel.from_pretrained("/path/to/checkpoint/svn_ckpt")
 - [x] SparseVideoNav Code Release.
   - [x] Inference code of distilled video generation model and model checkpoint.
   - [ ] Inference code of continuous action head and model checkpoint (Estimate 2026 Q3).
-- [ ] SparseVideoNav Dataset Release
-  - [ ] ~140h real-world VLN data (Estimate 2026 Q3).
+- [x] SparseVideoNav Dataset Release
+  - [x] [~140h real-world VLN data](https://huggingface.co/datasets/OpenDriveLab/SparseVideoNav).
 
 ## 📬 Contact
 
